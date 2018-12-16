@@ -59,39 +59,85 @@
 </layers>
 <library>
 <packages>
-<package name="S9066">
-<pad name="P$1" x="-1.27" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="1.27" y="0" drill="0.6" shape="square"/>
+<package name="TB6612">
+<pad name="P$1" x="-5.08" y="5.08" drill="0.6" shape="square"/>
+<pad name="P$2" x="-5.08" y="3.81" drill="0.6" shape="square"/>
+<pad name="P$3" x="-5.08" y="2.54" drill="0.6" shape="square"/>
+<pad name="P$4" x="-5.08" y="1.27" drill="0.6" shape="square"/>
+<pad name="P$5" x="-5.08" y="0" drill="0.6" shape="square"/>
+<pad name="P$6" x="-5.08" y="-1.27" drill="0.6" shape="square"/>
+<pad name="P$7" x="-5.08" y="-2.54" drill="0.6" shape="square"/>
+<pad name="P$8" x="-5.08" y="-3.81" drill="0.6" shape="square"/>
+<pad name="P$9" x="-5.08" y="-5.08" drill="0.6" shape="square"/>
+<pad name="P$10" x="3.81" y="-5.08" drill="0.6" shape="square"/>
+<pad name="P$11" x="3.81" y="-3.81" drill="0.6" shape="square"/>
+<pad name="P$12" x="3.81" y="-2.54" drill="0.6" shape="square"/>
+<pad name="P$13" x="3.81" y="-1.27" drill="0.6" shape="square"/>
+<pad name="P$14" x="3.81" y="0" drill="0.6" shape="square"/>
+<pad name="P$15" x="3.81" y="1.27" drill="0.6" shape="square"/>
 </package>
 </packages>
 <symbols>
-<symbol name="S9066">
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="10.16" length="middle" rot="R270"/>
-<pin name="P$2" x="0" y="-10.16" length="middle" rot="R90"/>
-<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-6.35" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-11.938" y1="2.032" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-9.398" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-8.128" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="3.302" x2="-6.858" y2="4.826" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="3.048" x2="-8.382" y2="3.048" width="0.254" layer="94"/>
-<text x="5.08" y="-7.62" size="1.778" layer="94">Anode</text>
-<text x="5.08" y="5.08" size="1.778" layer="94">Cathode</text>
+<symbol name="TB6612">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<pin name="P$1" x="-12.7" y="10.16" length="middle"/>
+<pin name="P$2" x="-12.7" y="7.62" length="middle"/>
+<pin name="P$3" x="-12.7" y="5.08" length="middle"/>
+<pin name="P$4" x="-12.7" y="2.54" length="middle"/>
+<pin name="P$5" x="-12.7" y="0" length="middle"/>
+<pin name="P$6" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P$7" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P$8" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P$9" x="-12.7" y="-10.16" length="middle"/>
+<pin name="P$10" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="P$11" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="P$12" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$13" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$14" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="P$15" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<text x="-25.4" y="10.16" size="1.778" layer="94">PWMA</text>
+<text x="-25.4" y="7.62" size="1.778" layer="94">AIN2</text>
+<text x="-25.4" y="5.08" size="1.778" layer="94">AIN1</text>
+<text x="-25.4" y="2.54" size="1.778" layer="94">VCC</text>
+<text x="-25.4" y="0" size="1.778" layer="94">STBY</text>
+<text x="-25.4" y="-2.54" size="1.778" layer="94">GND</text>
+<text x="-25.4" y="-5.08" size="1.778" layer="94">BIN1</text>
+<text x="-25.4" y="-7.62" size="1.778" layer="94">BIN2</text>
+<text x="-25.4" y="-10.16" size="1.778" layer="94">PWMB</text>
+<text x="17.78" y="12.7" size="1.778" layer="94">A01</text>
+<text x="17.78" y="7.62" size="1.778" layer="94">A02</text>
+<text x="17.78" y="2.54" size="1.778" layer="94">B01</text>
+<text x="17.78" y="-2.54" size="1.778" layer="94">B02</text>
+<text x="17.78" y="-7.62" size="1.778" layer="94">PGND</text>
+<text x="17.78" y="-12.7" size="1.778" layer="94">VM</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="S9066" prefix="D">
+<deviceset name="TB6612" prefix="MD">
 <gates>
-<gate name="G$1" symbol="S9066" x="0" y="0"/>
+<gate name="G$1" symbol="TB6612" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="S9066">
+<device name="" package="TB6612">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$11" pad="P$11"/>
+<connect gate="G$1" pin="P$12" pad="P$12"/>
+<connect gate="G$1" pin="P$13" pad="P$13"/>
+<connect gate="G$1" pin="P$14" pad="P$14"/>
+<connect gate="G$1" pin="P$15" pad="P$15"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
